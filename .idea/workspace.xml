@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d58ca282-c019-4f1e-906b-9b9acee2fcc5" name="Changes" comment="explicações">
-      <change beforePath="$PROJECT_DIR$/src/PlayUrCards/readme.text" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayUrCards/readme.text" afterDir="false" />
-    </list>
+    <list default="true" id="d58ca282-c019-4f1e-906b-9b9acee2fcc5" name="Changes" comment="explicações" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715266116899</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="explicações">
+      <option name="closed" value="true" />
+      <created>1715266150746</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715266150746</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
