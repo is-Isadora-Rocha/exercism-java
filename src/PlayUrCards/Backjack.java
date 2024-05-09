@@ -45,11 +45,17 @@ public class Backjack {
     }
     // task 3 PASSED
     public String largeHand(boolean isBlackjack, int dealerScore) {
-        if (isBlackjack){
-            if (dealerScore < 10){
-                return "W";
-            } return "S";
-        } return "P";
+        //VERSAO 1
+//        if (isBlackjack){
+//            if (dealerScore < 10){
+//                return "W";
+//            } return "S";
+//        } return "P";
+
+        // VERSAO 2
+        if (!isBlackjack) return "P";
+        else if (dealerScore < 10) return "W";
+        else return "S";
     }
 
     // task 4 PASSED
