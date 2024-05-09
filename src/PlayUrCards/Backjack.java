@@ -3,15 +3,30 @@ package PlayUrCards;
 import java.util.Objects;
 
 public class Backjack {
+    // task 1
     public int parseCard(String card) {
-        if (card.equals("ace")){
-            System.out.println(11);
-        } else if (card.equals("queen")) {
-            System.out.println(10);
+        switch (card){
+            case "ace": return 11;
+
+            case "ten":
+            case "jack":
+            case "queen":
+            case "king":
+                return 10;
+
+            case "two": return 2;
+            case "three": return 3;
+            case "four": return 4;
+            case "five": return 5;
+            case "six": return 6;
+            case "seven": return 7;
+            case "eight": return 8;
+            case "nine": return 9;
+            default: return 0;
         }
-        return 11;
     }
 
+    // task 2
     public boolean isBlackjack(String card1, String card2) {
         if (parseCard("ace") == 11 && parseCard("queen") == 10){
             isBlackjack("ace", "queen");
