@@ -1,13 +1,26 @@
 package PlayUrCards;
 
+import java.util.Objects;
+
 public class Backjack {
     public int parseCard(String card) {
-
-        throw new UnsupportedOperationException("Please implement the Blackjack.parseCard method");
+        if (card.equals("ace")){
+            System.out.println(11);
+        } else if (card.equals("queen")) {
+            System.out.println(10);
+        }
+        return 11;
     }
 
     public boolean isBlackjack(String card1, String card2) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.isBlackjack method");
+        if (parseCard("ace") == 11 && parseCard("queen") == 10){
+            isBlackjack("ace", "queen");
+            return true;
+        } else if (parseCard("queen") == 10 && parseCard("ace") == 11) {
+            isBlackjack("queen", "ace");
+            return true;
+        } else
+        return false;
     }
 
     public String largeHand(boolean isBlackjack, int dealerScore) {
