@@ -1,0 +1,49 @@
+1. Calcule a pontuação de qualquer cartão.
+Implemente uma função para calcular o valor numérico de um cartão com seu nome usando condicionais.
+
+parseCard("ace")
+// returns 11
+
+
+2. Determine se duas cartas constituem um Blackjack.
+Implemente uma função que retorne truese duas cartas formarem um Blackjack, falsecaso contrário.
+
+isBlackjack("queen", "ace")
+// returns true
+
+
+3. Implemente a lógica de decisão para pontuações manuais superiores a 20 pontos.
+Implemente uma função que retorne a representação em string de uma decisão com base em seus cartões. Esta função só é chamada se handScorefor maior que 20. Ela receberá 2 argumentos: isBlackJacke dealerScore. Deve implementar os marcadores na categoria “Mão Grande” acima.
+
+isBlackJack = true
+dealerScore = 7
+largeHand(isBlackJack, dealerScore)
+// returns "W"
+
+
+4. Implemente a lógica de decisão para pontuações manuais com menos de 21 pontos.
+Implemente uma função que retorne a representação em string de uma decisão com base em seus cartões. Esta função só é chamada se handScorefor menor que 21. Ela receberá 2 argumentos: handScoree dealerScore. Deve implementar os marcadores da categoria “Mão Pequena” acima.
+
+handScore = 15
+dealerScore = 12
+SmallHand(handScore, dealerScore)
+// returns "H"
+
+
+- Stand (S)
+- Hit (H)
+- Split (P)
+- Automatically win (W)
+
+
+Categoria: Mão Grande
+
+- Se você tiver um par de ases, deverá sempre dividi-los.
+- Se você tiver um Blackjack (duas cartas que somam 21) e o dealer não tiver um ás, um número ou um dez, você ganha automaticamente. Se o dealer tiver alguma dessas cartas, você terá que parar e aguardar a revelação da outra carta.
+
+
+Categoria: Mão Pequena
+
+- Se suas cartas somarem 17 ou mais, você deve sempre parar.
+- Se suas cartas somarem 11 ou menos, você deve sempre acertar.
+- Se a soma das suas cartas for um valor dentro do intervalo [12, 16], você deve sempre parar, a menos que o dealer tenha um 7 ou superior, caso em que você deve sempre acertar.
