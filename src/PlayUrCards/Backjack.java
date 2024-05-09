@@ -28,12 +28,14 @@ public class Backjack {
 
     // task 2 PASSED
     public boolean isBlackjack(String card1, String card2) {
-        if (parseCard(card1) == 10 && parseCard(card2) == 11 ||
-            parseCard(card1) == 11 && parseCard(card2) == 10) {
-            return true;
-        } else {
-            return false;
-        }
+//        if (parseCard(card1) == 10 && parseCard(card2) == 11 ||
+//            parseCard(card1) == 11 && parseCard(card2) == 10) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        return parseCard(card1) == 10 && parseCard(card2) == 11 ||
+                parseCard(card1) == 11 && parseCard(card2) == 10;
     }
 
     public String largeHand(boolean isBlackjack, int dealerScore) {
