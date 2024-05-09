@@ -28,18 +28,28 @@ public class Backjack {
 
     // task 2 PASSED
     public boolean isBlackjack(String card1, String card2) {
+        // VERSAO 1
 //        if (parseCard(card1) == 10 && parseCard(card2) == 11 ||
 //            parseCard(card1) == 11 && parseCard(card2) == 10) {
 //            return true;
 //        } else {
 //            return false;
 //        }
-        return parseCard(card1) == 10 && parseCard(card2) == 11 ||
-                parseCard(card1) == 11 && parseCard(card2) == 10;
-    }
 
+        // VERSAO 2
+//        return parseCard(card1) == 10 && parseCard(card2) == 11 ||
+//                parseCard(card1) == 11 && parseCard(card2) == 10;
+
+        // VERSAO 3
+        return parseCard(card1) + parseCard(card2) == 21;
+    }
+    // task 3 PASSED
     public String largeHand(boolean isBlackjack, int dealerScore) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.largeHand method");
+        if (isBlackjack){
+            if (dealerScore < 10){
+                return "W";
+            } return "S";
+        } return "P";
     }
 
     public String smallHand(int handScore, int dealerScore) {
