@@ -1,8 +1,8 @@
 1. Calcule a pontuação de qualquer cartão.
 Implemente uma função para calcular o valor numérico de um cartão com seu nome usando condicionais.
 
-``parseCard("ace")
-// returns 11``
+``parseCard("ace")``
+``// returns 11``
 
 
 2. Determine se duas cartas constituem um Blackjack.
