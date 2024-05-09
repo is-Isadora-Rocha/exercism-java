@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d58ca282-c019-4f1e-906b-9b9acee2fcc5" name="Changes" comment="teste 1 passed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d58ca282-c019-4f1e-906b-9b9acee2fcc5" name="Changes" comment="task 1 modified">
       <change beforePath="$PROJECT_DIR$/src/PlayUrCards/Backjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayUrCards/Backjack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,12 +79,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715262748342</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="task 1 modified">
+      <option name="closed" value="true" />
+      <created>1715263473805</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715263473805</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit cards" />
     <MESSAGE value="teste 1 passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="teste 1 passed" />
+    <MESSAGE value="task 1 modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 1 modified" />
   </component>
 </project>

@@ -3,7 +3,7 @@ package PlayUrCards;
 import java.util.Objects;
 
 public class Backjack {
-    // task 1
+    // task 1 PASSED
     public int parseCard(String card) {
         switch (card){
             case "ace": return 11;
@@ -26,16 +26,14 @@ public class Backjack {
         }
     }
 
-    // task 2
+    // task 2 PASSED
     public boolean isBlackjack(String card1, String card2) {
-        if (parseCard("ace") == 11 && parseCard("queen") == 10){
-            isBlackjack("ace", "queen");
+        if (parseCard(card1) == 10 && parseCard(card2) == 11 ||
+            parseCard(card1) == 11 && parseCard(card2) == 10) {
             return true;
-        } else if (parseCard("queen") == 10 && parseCard("ace") == 11) {
-            isBlackjack("queen", "ace");
-            return true;
-        } else
-        return false;
+        } else {
+            return false;
+        }
     }
 
     public String largeHand(boolean isBlackjack, int dealerScore) {
